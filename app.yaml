@@ -1,0 +1,13 @@
+runtime: python39  # Change this to your desired Python version
+
+instance_class: F2 # Adjust according to your needs
+
+env_variables:
+  MYSQL_HOST: "35.200.211.122"  # Change to your MySQL host
+  MYSQL_USER: "root"  # Change to your MySQL user
+  MYSQL_PASSWORD: ""  # Change to your MySQL password
+  MYSQL_DATABASE: "plantdesease"  # Change to your MySQL database
+
+handlers:
+- url: /.*
+  script: auto
